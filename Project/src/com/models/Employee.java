@@ -1,8 +1,52 @@
 package com.models;
 
 public class Employee {
-	
+	private int empId;
+	private String name;
 	private String userName;
 	private String password;
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Employee(int empId, String name, String userName, String password) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.userName = userName;
+		this.password = password;
+	}
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + ", userName=" + userName + ", password=" + password
+				+ "]";
+	}
+	
+	
+	
 
 }
