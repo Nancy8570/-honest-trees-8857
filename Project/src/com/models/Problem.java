@@ -5,13 +5,13 @@ public class Problem {
 	private int problemId;
 	private String type;
 	private String description;
-	private int date;
+	private String date;
 	private String status;
 	public Problem() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Problem(int problemId, String type, String description, int date, String status) {
+	public Problem(int problemId, String type, String description, String date, String status) {
 		super();
 		this.problemId = problemId;
 		this.type = type;
@@ -37,7 +37,7 @@ public class Problem {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getDate() {
+	public String getDate() {
 		return date;
 	}
 	public void setDate(int date) {
