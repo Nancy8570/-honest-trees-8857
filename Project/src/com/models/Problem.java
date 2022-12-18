@@ -40,8 +40,8 @@ public class Problem {
 	public String getDate() {
 		return date;
 	}
-	public void setDate(int date) {
-		this.date = date;
+	public void setDate(String date2) {
+		this.date = date2;
 	}
 	public String getStatus() {
 		return status;

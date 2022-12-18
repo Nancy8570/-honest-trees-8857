@@ -58,21 +58,17 @@ public class EmployeeImpl implements EmployeeeDao {
 			
 			ResultSet rs=ps.executeQuery();
 			
-			while(rs.next()) {
+			if(rs.next()) {
 				int id=rs.getInt("empId");
-				String name=rs.getString("name");
+				String name=rs.getString("empName");
 				String uname=rs.getString("username");
-				String upswrd=rs.getString("password");
+				String upass=rs.getString("password");	
 				
-				employee=new Employee(id,name,uname,upswrd);
+				employee=new Employee(id, name, uname, upass);
 				
-				
-				
-				
-			}else {
-				throw new employeeException("Invalid credentials");
-				
-				
+			}
+			else {
+				throw new employeeException("Invalid Username or Password...");
 			}
 			
 			
